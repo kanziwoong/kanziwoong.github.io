@@ -14,7 +14,7 @@
 
     $count = mysql_num_rows( $result );
     if ( $count > 0 ) {
-        header('location: http://jusarang.kanziw.com/login.php');
+        header('location: ./login.php');
     }
     else {
         echo "authentication fail... ";
