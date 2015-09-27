@@ -1,9 +1,3 @@
-<!--
-    echo "id: $_POST[id]";
-    echo "<br>";
-    echo "pw: $_POST[pw]";
--->
-
 <?php
     session_start();
     $DB = mysql_connect( 'jusarang.kanziw.com', 'jusarang', 'a' );
@@ -14,7 +8,6 @@
 
     $count = mysql_num_rows( $result );
     if ( $count > 0 ) {
-        $_SESSION['is_logged'] = 'YES';
         $_SESSION['id'] = $_POST[id];
         header('location: ./login.php');
     }
