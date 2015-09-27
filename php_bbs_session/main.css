@@ -1,0 +1,28 @@
+.nav a {
+        color: gray;
+        padding: 14px 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+}
+
+.nav li {
+        display: inline;
+}
+
+
+.jumbotron {
+        height: 400px;
+        background-image:url('https://pbs.twimg.com/profile_images/551756034780311552/Nvpilgd9_400x400.jpeg');
+}
+
+.jumbotron h1 {
+        color: #ee82ee;
+        font-size: 50px;
+        font-family: Arial;
+}
+
+.jumbotron p {
+        color: #000000;
+        font-size: 20px;
+        font-weight: bold;
+}
