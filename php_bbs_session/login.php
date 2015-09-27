@@ -1,7 +1,12 @@
 <?php
     session_start();
     $is_logged = $_SESSION['is_logged'];
-    if($is_logged == 'NO') {
+    if($is_logged == 'YES') {
+        echo "already login...";
+        echo "<br>";
+        echo "<a href='./logout.php'>Logout</a>";
+    }
+    else {
 ?>
 <html>
     <head>
@@ -18,10 +23,5 @@
 </html>
 
 <?php
-    }
-else {
-        echo "already login...";
-        echo "<br>";
-        echo "<a href='./logout.php'>Logout</a>";
     }
 ?>
