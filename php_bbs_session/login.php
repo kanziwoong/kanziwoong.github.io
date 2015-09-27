@@ -19,7 +19,8 @@
 <?php
     }
 else {
-    echo "already login...";
-    echo "<br>";
-    echo "<a href='./logout.php'>Logout</a>";
-}
+        echo "already login...";
+        echo "<br>";
+        echo "<a href='./logout.php'>Logout</a>";
+    }
+?>
