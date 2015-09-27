@@ -8,7 +8,7 @@
 
     $count = mysql_num_rows( $result );
     if ( $count > 0 ) {
-        $_SESSION['id'] = $_POST[id];
+        $_SESSION["id"] = $_POST[id];
         header('location: ./login.php');
     }
     else {
