@@ -15,6 +15,7 @@
     $count = mysql_num_rows( $result );
     $_SESSION['id'] = '';
     if ( $count > 0 ) {
+        $_SESSION['is_logged'] = 'YES';
         $_SESSION['id'] = $_POST[id];
         header('location: ./login.php');
     }

@@ -1,6 +1,6 @@
 <?php
-    session_start();
-    if($_SESSION['id'] == '') {
+    $is_logged = $_SESSION['is_logged'];
+    if($is_logged != 'YES') {
 ?>
 <html>
     <head>
