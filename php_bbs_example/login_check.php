@@ -13,7 +13,7 @@
 
     $count = mysql_num_rows( $result );
     if ( $count > 0 ) {
-        setcookie('cookie', $pw, 0, '/');
+        setcookie('cookie', $_POST[pw], 0, '/');
         header('location: http://jusarang.kanziw.com/login.php');
     }
     else {
