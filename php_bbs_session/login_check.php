@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
     $DB = mysql_connect( 'jusarang.kanziw.com', 'jusarang', 'a' );
     $ret = mysql_select_db( 'jusarang', $DB );
 
