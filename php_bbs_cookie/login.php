@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        <form method=POST action=login_check.php>
+        <form method=POST action=./login_check.php>
             id <input type="text" name="id"><br>
             pw <input type="password" name="pw"><br>
             <input type="submit" value="Login">
@@ -20,5 +20,5 @@
 else {
     echo "already login...";
     echo "<br>";
-    echo "<a href='logout.php'>Logout</a>";
+    echo "<a href='./logout.php'>Logout</a>";
 }
