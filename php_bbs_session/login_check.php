@@ -13,7 +13,7 @@
     $result = mysql_query( $sql );
 
     $count = mysql_num_rows( $result );
-    $_SESSION['id'] = '';
+    $_SESSION['is_logged'] = 'NO';
     if ( $count > 0 ) {
         $_SESSION['is_logged'] = 'YES';
         $_SESSION['id'] = $_POST[id];
