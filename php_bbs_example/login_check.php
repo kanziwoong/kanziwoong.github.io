@@ -7,12 +7,15 @@
     $DB = mysql_connect( 'jusarang.kanziw.com', 'jusarang', 'a' );
     $ret = mysql_select_db( 'jusarang', $DB );
 
-    $sql = "select * from user";
+    $sql = "select * from user where id='$_POST[id]' and pw=password('$_POST[pw]')";
     $result = mysql_query( $sql );
 
-    while( $row = mysql_fetch_array( $result, MYSQL_NUM ) ) {
-      echo "num: $row[0] name: $row[1] id: $row[2] pw: $row[3]";
-      echo "<br>";
+    $count = mysql_num_rows( $result );
+    if ( $count > 0 ) {
+        header('location: http://jusarang.kanziw.com/login.html');
+    }
+    else {
+        echo "authentication fail... ";
     }
 
 ?>
