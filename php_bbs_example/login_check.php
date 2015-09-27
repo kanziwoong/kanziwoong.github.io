@@ -5,7 +5,7 @@
     echo "pw: $_POST[pw]";
 
     $DB = mysql_connect( 'jusarang.kanziw.com', 'jusarang', 'a' );
-    $ret = mysql_select_db( 'test', $DB );
+    $ret = mysql_select_db( 'jusarang', $DB );
 
     $sql = "select * from user";
     $result = mysql_query( $sql );
