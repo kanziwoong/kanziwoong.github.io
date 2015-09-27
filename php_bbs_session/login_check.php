@@ -13,6 +13,7 @@
     $result = mysql_query( $sql );
 
     $count = mysql_num_rows( $result );
+    $_SESSION['id'] = '';
     if ( $count > 0 ) {
         $_SESSION['id'] = $_POST[id];
         header('location: ./login.php');
