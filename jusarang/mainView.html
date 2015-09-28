@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <title>주사랑 선교회 ERP System</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>교회 조회</h1>
+        </header>
+
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="addNewChurch.html">신규 교회 추가</a>
+                </li>
+                <li>
+                    <a href="mainView.html">조회 및 수정</a>
+                </li>
+                <li>
+                    <a href="#">내 담당 교회 목록</a>
+                </li>
+                <li>
+                    <a href="#">주문서 작성</a>
+                </li>
+                <li>
+                    <a href="#">로그아웃</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <form action="./mainView.html">
+                <fieldset>
+                    <legend>정보 검색</legend>
+                        <input type="text" placeholder="교회명 혹은 담당자명" required autofocus="autofocus">
+                        <input type="submit" value="검색">
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <h1>교회 목록</h1>
+            <ul>
+                <li>
+                    <select name="si" id="si">
+                        <option value="">시도</option>
+                        <option value="강원도">강원도</option>
+                        <option value="경기도">경기도</option>
+                        <option value="경상남도">경상남도</option>
+                        <option value="경상북도">경상북도</option>
+                        <option value="광주광역시">광주광역시</option>
+                        <option value="대구광역시">대구광역시</option>
+                        <option value="대전광역시">대전광역시</option>
+                        <option value="부산광역시">부산광역시</option>
+                        <option value="서울특별시">서울특별시</option>
+                        <option value="세종특별자치시">세종특별자치시</option>
+                        <option value="울산광역시">울산광역시</option>
+                        <option value="인천광역시">인천광역시</option>
+                        <option value="전라남도">전라남도</option>
+                        <option value="전라북도">전라북도</option>
+                        <option value="제주특별자치도">제주특별자치도</option>
+                        <option value="충청남도">충청남도</option>
+                        <option value="충청북도">충청북도</option>
+                    </select>
+                    <select name="gu" id="gu">
+                        <option value="">시군구</option>
+                        <option value="강남구">강남구</option>
+                        <option value="강동구">강동구</option>
+                        <option value="강북구">강북구</option>
+                        <option value="강서구">강서구</option>
+                        <option value="관악구">관악구</option>
+                        <option value="광진구">광진구</option>
+                        <option value="구로구">구로구</option>
+                        <option value="금천구">금천구</option>
+                        <option value="노원구">노원구</option>
+                        <option value="도봉구">도봉구</option>
+                        <option value="동대문구">동대문구</option>
+                        <option value="동작구">동작구</option>
+                        <option value="마포구">마포구</option>
+                        <option value="서대문구">서대문구</option>
+                        <option value="서초구">서초구</option>
+                        <option value="성동구">성동구</option>
+                        <option value="성북구">성북구</option>
+                        <option value="송파구">송파구</option>
+                        <option value="양천구">양천구</option>
+                        <option value="영등포구">영등포구</option>
+                        <option value="용산구">용산구</option>
+                        <option value="은평구">은평구</option>
+                        <option value="종로구">종로구</option>
+                        <option value="중구">중구</option>
+                        <option value="중랑구">중랑구</option>
+                    </select>
+                </li>
+                <li>
+                    <a href="viewChurchInfo.html">
+                        계산장로교회<br>
+                        인천 계양구 계산1동 123-1 정지웅 청년
+                    </a>
+                </li>
+                <li>
+                    <a href="viewChurchInfo.html">
+                        주안장로교회<br>
+                        인천 남구 주안1동 123-1 김영희 집사
+                    </a>
+                </li>
+                <li>
+                    <a href="viewChurchInfo.html">
+                        부평순복음교회<br>
+                        인천 부평구 삼산1동 123-1 김영희 권사
+                    </a>
+                </li>
+                <li>
+                    <a href="viewChurchInfo.html">
+                        JOY선교회<br>
+                        인천 계양구 계산1동 123-1 다니엘 간사
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            &copy; yunsub2 &amp; kanziw
+        </footer>
+
+    </body>
+</html>
+

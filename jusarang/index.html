@@ -3,156 +3,41 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-        <title>주사랑 선교회 ERP System   /title>
-        <link rel="stylesheet" href="today.css">
+        <title>주사랑 선교회 ERP System</title>
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <header id="mainHeader">
-            <h1>오늘의 정보</h1>
-            <a href="tel:01012341234" class="btnTel">통화</a>
+        <header class="header">
+            <h1>Jusarang ERP System</h1>
         </header>
-        <nav id="mainNav">
-            <ul>
-                <li>
-                    <a href="#news">뉴스</a>
-                </li>
-                <li>
-                    <a href="#stock">증권</a>
-                </li>
-                <li>
-                    <a href="#join">회원가입</a>
-                </li>
-            </ul>
+
+        <nav class="nav">
+            로그인이 필요한 서비스입니다
         </nav>
 
-        <section id="news" class="mainSection">
-            <h1>뉴스</h1>
-            <ul>
-                <li>
-                    <a href="http://news.naver.com/main/read.nhn?mode=LS2D&amp;mid=shm&amp;sid1=105&amp;sid2=283&amp;oid=030&amp;aid=0002396865"><strong>[속보] 정부 SW정책 업그레이드 급하다. 그리고 글자수를 늘리는 중이다아아아아아아아아아</strong></a>
-                </li>
-                <li>
-                    <a href="http://news.naver.com/main/read.nhn?mode=LS2D&amp;mid=shm&amp;sid1=105&amp;sid2=283&amp;oid=109&amp;aid=0003161760">가격↓ 성능↑...LG전자, 실속형 LG 울트라 PC 3종 출시  그리고 글자수를 늘리는 중이다아아아아아아아아아</a>
-                </li>
-                <li>
-                    <a href="http://news.naver.com/main/read.nhn?mode=LS2D&amp;mid=shm&amp;sid1=105&amp;sid2=283&amp;oid=092&amp;aid=0002083237">한국, iOS9 채택속도 세계 선두권</a>
-                </li>
-                <li>
-                    <a href="http://news.naver.com/main/read.nhn?mode=LS2D&amp;mid=shm&amp;sid1=105&amp;sid2=283&amp;oid=092&amp;aid=0002083233">오픈소스 기반 IT혁신의 4가지 키워드</a>
-                </li>
-                <li>
-                    <a href="http://news.naver.com/main/read.nhn?mode=LS2D&amp;mid=shm&amp;sid1=105&amp;sid2=283&amp;oid=030&amp;aid=0002396877">한컴 출신 개발자 4명이 뭉쳤다 '쿠쿠닥스'</a>
-                </li>
-            </ul>
+        <section>
+            <h1>Jusarang ERP System</h1>
         </section>
 
-        <section id="stock" class="mainSection">
-            <h1>증권</h1>
-            <table>
-                <caption class="hidden">증권</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">기업명</th>
-                        <th scope="col">시가</th>
-                        <th scope="col">변동액</th>
-                        <th scope="col">수익률</th>
-                    </tr>
-                </thead>
-                <tfoot>
-                    <tr>
-                        <th scope="row">통계</th>
-                        <td>565,875</td>
-                        <td><img src="img/icon_down.png" alt="하락"> 35,500</td>
-                        <td>-1.46%</td>
-                    </tr>
-                </tfoot>
-                <tbody>
-                    <tr class="down">
-                        <th scope="row">삼성전자</th>
-                        <td>1,386,000</td>
-                        <td><img src="img/icon_down.png" alt="하락"> 39,000</td>
-                        <td>-2.74%</td>
-                    </tr>
-                    <tr class="up">
-                        <th scope="row">현대차</th>
-                        <td>256,500</td>
-                        <td><img src="img/icon_up.png" alt="상승"> 1,000</td>
-                        <td>+0.39%</td>
-                    </tr>
-                    <tr class="down">
-                        <th scope="row">POSCO</th>
-                        <td>329,000</td>
-                        <td><img src="img/icon_down.png" alt="하락"> 500</td>
-                        <td>-0.15%</td>
-                    </tr>
-                    <tr class="up">
-                        <th scope="row">현대모비스</th>
-                        <td>292,000</td>
-                        <td><img src="img/icon_up.png" alt="상승"> 3,000</td>
-                        <td>+1.04%</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section id="join" class="mainSection">
-            <h1>회원가입</h1>
-            <form action="send.php">
+        <section>
+            <form action="./mainNav.html">
                 <fieldset>
-                    <legend>필수 사항</legend>
+                    <legend>Login</legend>
                     <ul>
                         <li>
-                            <span class="joinTitle">구분</span>
-                            <input type="radio" name="typeCheck" checked id="userLocal">
-                            <label for="userLocal">내국인</label>
-                            <input type="radio" name="typeCheck" id="userForeigner">
-                            <label for="userForeigner">외국인</label>
+                            <input type="text" placeholder="ID" name="id" required autofocus="autofocus">
                         </li>
                         <li>
-                            <label for="userID" class="joinTitle">아이디</label>
-                            <input type="text" name="id" id="userID" placeholder="영문, 숫자" required autofocus="autofocus">
-                        </li>
-                        <li>
-                            <label for="userPW" class="joinTitle">패스워드</label>
-                            <input type="password" name="pw" id="userPW" placeholder="영문, 숫자, 특수문자" required>
+                            <input type="password" placeholder="Password" name="pw" required>
                         </li>
                     </ul>
+                    <input type="submit" value="로그인">
                 </fieldset>
-                <fieldset>
-                    <legend>추가 사항</legend>
-                    <ul>
-                        <li>
-                            <label for="userEmail" class="joinTitle">이메일</label>
-                            <input type="email" id="userEmail">
-                        </li>
-                        <li>
-                            <label for="userTel" class="joinTitle">휴대폰 번호</label>
-                            <input type="tel" id="userTel">
-                        </li>
-                        <li>
-                            <label for="userAge" class="joinTitle">나이</label>
-                            <input type="number" name="age" id="userAge">
-                        </li>
-                        <li>
-                            <label for="userUrl" class="joinTitle">홈페이지</label>
-                            <input type="url" id="userUrl">
-                        </li>
-                        <li>
-                            <label for="userInfo" class="joinTitle">소개글</label>
-                            <textarea id="userInfo" placeholder="간단한 소개글을 입력하세요."></textarea>
-                        </li>
-                    </ul>
-                </fieldset>
-
-                <div class="actionButtons">
-                    <button type="reset">취소</button>
-                    <button type="submit">등록</button>
-                </div>
             </form>
         </section>
 
-        <footer id="mainFooter">
-            &copy; kanziw
+        <footer>
+            &copy; yunsub2 &amp; kanziw
         </footer>
 
     </body>

@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* default style */
+/*body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,
+textarea,button,select { margin:0; padding:0; }
+body { font-size:14px; }
+input,textarea,select,button,table{ font-size:inherit; font-family:inherit; line-height:inherit; }
+table { border-collapse:collapse; }
+ul, ol { list-style:none; }
+img, fieldset { border:0; }
+.hidden {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    line-height: 1px;
+    text-indent: 4px;
+    white-space: nowrap;
+}*/
+
+/* custom style */
+/* header */
+.header {
+    background-color: #BBB;
+}
+
+/* nav */
+.nav {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    line-height: 1px;
+    text-indent: 4px;
+    white-space: nowrap;
+}
