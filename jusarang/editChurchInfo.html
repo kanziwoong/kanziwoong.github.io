@@ -8,7 +8,7 @@
     </head>
     <body>
         <header class="header">
-            <h1>신규 교회 추가</h1>
+            <h1>교회 정보 수정</h1>
         </header>
 
         <nav class="nav">
@@ -38,17 +38,17 @@
                     <ul>
                         <li>
                             <label for="churchName">교회명</label>
-                            <input type="text" id="churchName" required autofocus="autofocus">
+                            <input type="text" id="churchName" required autofocus="autofocus" value="계산장로교회">
                         </li>
                         <li>
                             <label for="churchAddr">주소</label>
-                            <input type="text" id="churchAddr">
+                            <input type="text" id="churchAddr" value="인천 계양구 부평초등길">
                         </li>
                         <li>
                             <label for="midCTelNum">연락처</label>
                             <select id="firstCTelNum">
                                 <option>02</option>
-                                <option>032</option>
+                                <option selected>032</option>
                                 <option>033</option>
                                 <option>010</option>
                                 <option>011</option>
@@ -57,8 +57,8 @@
                                 <option>019</option>
                                 <option>070</option>
                             </select>
-                            <input type="tel" id="midCTelNum">
-                            <input type="tel" id="lastCTelNum">
+                            <input type="tel" id="midCTelNum" value="545">
+                            <input type="tel" id="lastCTelNum" value="8981">
                         </li>
                         <li>
                             <label for="markPerson">배정직원</label>
@@ -71,10 +71,10 @@
                     <ul>
                         <li>
                             <label for="name1">이름</label>
-                            <input type="text" id="name1" required>
+                            <input type="text" id="name1" required value="정명옥">
                             <select>
                                 <option>권사님</option>
-                                <option>집사님</option>
+                                <option selected>집사님</option>
                                 <option>장로님</option>
                                 <option>목사님</option>
                                 <option>사모님</option>
@@ -84,7 +84,7 @@
                         </li>
                         <li>
                             <label for="position1">직위</label>
-                            <input type="text" id="position1">
+                            <input type="text" id="position1" value="여전도회장">
                             <select>
                                 <option>재직</option>
                                 <option>은퇴</option>
@@ -97,19 +97,19 @@
                                 <option>02</option>
                                 <option>032</option>
                                 <option>033</option>
-                                <option>010</option>
+                                <option selected>010</option>
                                 <option>011</option>
                                 <option>017</option>
                                 <option>018</option>
                                 <option>019</option>
                                 <option>070</option>
                             </select>
-                            <input type="tel" id="midP1TelNum" required>
-                            <input type="tel" id="lastP1TelNum" required>
+                            <input type="tel" id="midP1TelNum" required value="1234">
+                            <input type="tel" id="lastP1TelNum" required value="5678">
                         </li>
                         <li>
                             <label for="name1Addr">주소</label>
-                            <input type="text" id="name1Addr" required>
+                            <input type="text" id="name1Addr" required value="인천 계양구 부평초등길">
                         </li>
                         <li>
                             <input type="radio" name="mainPerson" id="person1" checked>
@@ -119,9 +119,9 @@
                 </fieldset>
                 <fieldset>
                     <legend>메모</legend>
-                    <textarea placeholder="특이사항 입력"></textarea>
+                    <textarea>매년 추석 떄 바자회가 있음</textarea>
                 </fieldset>
-                <input type="submit" value="추가">
+                <input type="submit" value="수정">
             </form>
         </section>
 
@@ -131,4 +131,3 @@
 
     </body>
 </html>
-

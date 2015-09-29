@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <title>주사랑 선교회 ERP System</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>주문서 수정</h1>
+        </header>
+
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="addNewChurch.html">신규 교회 추가</a>
+                </li>
+                <li>
+                    <a href="mainView.html">조회 및 수정</a>
+                </li>
+                <li>
+                    <a href="myChurchList.html">내 담당 교회 목록</a>
+                </li>
+                <li>
+                    <a href="writeOrderSheet.html">주문서 작성</a>
+                </li>
+                <li>
+                    <a href="#">로그아웃</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <form action="./viewOrderSheet.html">
+                <fieldset>
+                    <legend>배송 정보</legend>
+                    <ul>
+                        <li>
+                            <label for="churchName">교회명</label>
+                            <button id="churchName" formaction="#">검색</button>
+                            <input type="text" required readonly value="계산장로교회">
+                        </li>
+                        <li>
+                            <label for="churchAddr">주소</label>
+                            <input type="text" id="churchAddr" required readonly value="인천 계양구 부평초등길">
+                        </li>
+                        <li>
+                            <label for="getPerson">수취인</label>
+                            <input type="text" required readonly value="김에스더 집사">
+                        </li>
+                        <li>
+                            <label for="midCTelNum">연락처</label>
+                            <select id="firstCTelNum">
+                                <option>02</option>
+                                <option>032</option>
+                                <option>033</option>
+                                <option selected>010</option>
+                                <option>011</option>
+                                <option>017</option>
+                                <option>018</option>
+                                <option>019</option>
+                                <option>070</option>
+                            </select>
+                            <input type="tel" id="midCTelNum" readonly required value="1234">
+                            <input type="tel" id="lastCTelNum" readonly required value="5678">
+                        </li>
+                        <li>
+                            <label for="outDate">출고일</label>
+                            <input type="date" id="outDate" required readonly value="2015-01-01">
+                        </li>
+                        <li>
+                            <label for="oderNum">송장번호</label>
+                            <input type="text" id="oderNum" required readonly value="52-정명옥">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>물품선택</legend>
+                    <ul>
+                        <li>
+                            <select>
+                                <option selected>감피고기</option>
+                                <option>감피김치</option>
+                                <option>손고기</option>
+                                <option>손김치</option>
+                                <option>감피고기(완무)</option>
+                                <option>감피김치(완무)</option>
+                                <option>손고기(완무)</option>
+                                <option>손김치(완무)</option>
+                                <option>감피고기(옛)</option>
+                                <option>감피김치(옛)</option>
+                                <option>손고기(옛)</option>
+                                <option>손김치(옛)</option>
+                            </select>
+                            <input type="number" value="10">
+                            <select>
+                                <option selected>봉지</option>
+                                <option>개</option>
+                                <option>조각</option>
+                                <option>kg</option>
+                            </select>
+                            <button formaction="#">-</button>
+                        </li>
+                        <li>
+                            <select>
+                                <option>감피고기</option>
+                                <option>감피김치</option>
+                                <option>손고기</option>
+                                <option>손김치</option>
+                                <option>감피고기(완무)</option>
+                                <option>감피김치(완무)</option>
+                                <option>손고기(완무)</option>
+                                <option>손김치(완무)</option>
+                                <option>감피고기(옛)</option>
+                                <option>감피김치(옛)</option>
+                                <option>손고기(옛)</option>
+                                <option>손김치(옛)</option>
+                                <option selected>S.해전</option>
+                            </select>
+                            <input type="number" value="2">
+                            <select>
+                                <option>봉지</option>
+                                <option>개</option>
+                                <option selected>조각</option>
+                                <option>kg</option>
+                            </select>
+                            <button formaction="#">-</button>
+                        </li>
+                        <li>
+                            <button formaction="#">+</button>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>박스 개수</legend>
+                    <ul>
+                        <li>
+                            <label>스티로폼</label>
+                            <input type="number" value="1"> 개
+                        </li>
+                        <li>
+                            <label>박스</label>
+                            <input type="number" value="0"> 개
+                        </li>
+                        <li>
+                            직배
+                            <input type="radio" name="direct" id="directYes" checked>
+                            <label for="directYes">YES</label>
+                            <input type="radio" name="direct" id="directNo">
+                            <label for="directNo">NO</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>메모</legend>
+                    <textarea>직배 - 찐빵 1박스</textarea>
+                </fieldset>
+                <input type="submit" value="수정 완료">
+            </form>
+        </section>
+
+        <footer>
+            &copy; yunsub2 &amp; kanziw
+        </footer>
+
+    </body>
+</html>

@@ -20,10 +20,10 @@
                     <a href="mainView.html">조회 및 수정</a>
                 </li>
                 <li>
-                    <a href="#">내 담당 교회 목록</a>
+                    <a href="myChurchList.html">내 담당 교회 목록</a>
                 </li>
                 <li>
-                    <a href="#">주문서 작성</a>
+                    <a href="writeOrderSheet.html">주문서 작성</a>
                 </li>
                 <li>
                     <a href="#">로그아웃</a>
@@ -32,8 +32,7 @@
         </nav>
 
         <section>
-<!--             <form action="editChurchInfo.html"> -->
-            <form action="#">
+            <form action="editChurchInfo.html">
                 <fieldset>
                     <legend>교회 정보</legend>
                     <ul>
@@ -46,6 +45,7 @@
                             <input type="text" value="인천 계양구 부평초등길" readonly>
                         </li>
                         <li>
+                            <label>연락처</label>
                             <input type="tel" value="032" readonly>
                             <input type="tel" value="545" readonly>
                             <input type="tel" value="8981" readonly>
@@ -60,8 +60,23 @@
                     <legend>담당자1</legend>
                     <ul>
                         <li>
-                            김에스더 집사<br>
-                            여전도회장 <a href="tel:01012345678">010-1234-5678</a>
+                            김에스더 집사
+                        </li>
+                        <li>
+                            여전도회장
+                        </li>
+                        <li>
+                            <a href="tel:01012345678">010-1234-5678</a>
+                        </li>
+                        <li>
+                            인천 계양구 부평초등길
+                        </li>
+                        <li>
+                            <input type="radio" name="mainPerson" id="person1" checked readonly>
+                            <label for="person1">주 담당자</label>
+                        </li>
+                        <li>
+                            <button formaction="writeOrderSheet.html">주문서 작성</button>
                         </li>
                 </fieldset>
                 <fieldset>
