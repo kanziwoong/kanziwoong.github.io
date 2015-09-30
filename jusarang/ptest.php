@@ -7,7 +7,7 @@
 
     // Print it!
     // echo $str;
-    echo $html
+    echo $html;
 ?>
 
 
