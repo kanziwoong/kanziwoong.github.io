@@ -1,8 +1,8 @@
-<!--
+
     echo "id: $_POST[id]";
     echo "<br>";
     echo "pw: $_POST[pw]";
--->
+
 
 <?php
     $DB = mysql_connect( 'jusarang.kanziw.com', 'jusarang', 'a' );
@@ -11,12 +11,14 @@
     $sql = "select * from user where id='$_POST[id]' and pw=password('$_POST[pw]')";
     $result = mysql_query( $sql );
 
-    $count = mysql_num_rows( $result );
-    if ( $count > 0 ) {
-        setcookie('cookie', $_POST[pw], 0, '/');
-        header('location: ./login.php');
-    }
-    else {
-        echo "authentication fail... ";
-    }
+    echo $result;
+
+    // $count = mysql_num_rows( $result );
+    // if ( $count > 0 ) {
+    //     setcookie('cookie', $_POST[pw], 0, '/');
+    //     header('location: ./login.php');
+    // }
+    // else {
+    //     echo "authentication fail... ";
+    // }
 ?>
