@@ -11,11 +11,11 @@
 
     $count = mysql_num_rows( $result );
     echo $count;
-    // if ( $count > 0 ) {
-    //     setcookie('cookie', $_POST[pw], 0, '/');
-    //     header('location: ./login.php');
-    // }
-    // else {
-    //     echo "authentication fail... ";
-    // }
+    if ( $count > 0 ) {
+        setcookie('cookie', $_POST[pw], 0, '/');
+        header('location: ./login.php');
+    }
+    else {
+        echo "authentication fail... ";
+    }
 ?>
