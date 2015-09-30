@@ -4,7 +4,7 @@
     $str = $html;
 
     // Print it!
-    echo $html;
+    echo $str;
 ?>
 
 
