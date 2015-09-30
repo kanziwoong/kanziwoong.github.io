@@ -1,10 +1,10 @@
-
+<?php
     echo "id: $_POST[id]";
     echo "<br>";
     echo "pw: $_POST[pw]";
 
 
-<?php
+
     $DB = mysql_connect( 'jusarang.kanziw.com', 'jusarang', 'a' );
     $ret = mysql_select_db( 'jusarang', $DB );
 
