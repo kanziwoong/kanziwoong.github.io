@@ -6,8 +6,8 @@
     $str = $html;
 
     // Print it!
-    // echo $str;
-    echo $html;
+    echo $str;
+    // echo $html;
 ?>
 
 
