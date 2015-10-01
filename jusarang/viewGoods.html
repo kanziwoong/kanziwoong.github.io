@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <title>주사랑 선교회 ERP System</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>물품 상세 정보</h1>
+        </header>
+
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="mainView.html">교회 조회</a>
+                </li>
+                <li>
+                    <a href="viewOrderSheetList.html">주문서 조회</a>
+                </li>
+                <li>
+                    <a href="writeOrderSheet.html">주문서 작성</a>
+                </li>
+                <li>
+                    <a href="#">로그아웃</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <form action="./manageGoods.html">
+                <fieldset>
+                    <legend>물품 정보</legend>
+                    <ul>
+                        <li>
+                            <label for="goodsName">물품명</label>
+                            <input type="text" id="goodsName" required value="감피고기">
+                        </li>
+                        <li>
+                            <label for="quantityInventory">재고</label>
+                            <input type="number" id="quantityInventory" required value="200">
+                        </li>
+                        <li>
+                            <label for="trader">거래처</label>
+                            <input type="text" id="trader" readonly required value="아하 만두">
+                        </li>
+                        <li>
+                            <a href="tel:01012345678">주문하기</a>
+                        </li>
+                        <li>
+                            <select>
+                                <option>판매 상품</option>
+                                <option>판매 안함</option>
+                            </select>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>메모</legend>
+                    <textarea placeholder="특이사항 입력"></textarea>
+                </fieldset>
+                <input type="submit" value="물품 정보 수정">
+            </form>
+        </section>
+
+        <footer>
+            &copy; yunsub2 &amp; kanziw
+        </footer>
+
+    </body>
+</html>
