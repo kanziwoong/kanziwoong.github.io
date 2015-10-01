@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <title>주사랑 선교회 ERP System</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>거래처 목록</h1>
+        </header>
+
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="mainView.html">교회 조회</a>
+                </li>
+                <li>
+                    <a href="viewOrderSheetList.html">주문서 조회</a>
+                </li>
+                <li>
+                    <a href="writeOrderSheet.html">주문서 작성</a>
+                </li>
+                <li>
+                    <a href="#">로그아웃</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <button onClick="location.href='addNewTraders.html'">신규 거래처 추가</button>
+            <table>
+                <caption class="hidden">거래처 목록</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">거래처명</th>
+                        <th scope="col">연락처</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th scope="row">거래처 종류</th>
+                        <td>xx개</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td style=cursor:hand; onClick="location.href='viewTraders.html'">아하만두</td>
+                        <td><a href="tel:01012345678">010-1234-5678</a></td>
+                    </tr>
+                    <tr>
+                        <td style=cursor:hand; onClick="location.href='viewTraders.html'">감피김치</td>
+                        <td><a href="tel:01012345678">010-1234-5678</a></td>
+                    </tr>
+                    <tr>
+                        <td style=cursor:hand; onClick="location.href='viewTraders.html'">왕갈비</td>
+                        <td><a href="tel:01012345678">010-1234-5678</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            &copy; yunsub2 &amp; kanziw
+        </footer>
+
+    </body>
+</html>
+

@@ -8,7 +8,7 @@
     </head>
     <body>
         <header class="header">
-            <h1>신규 거래처 추가</h1>
+            <h1>신규 직원 추가</h1>
         </header>
 
         <nav class="nav">
@@ -29,21 +29,17 @@
         </nav>
 
         <section>
-            <form action="./viewTradersList.html">
+            <form action="./viewStaffList.html">
                 <fieldset>
-                    <legend>거래처 정보</legend>
+                    <legend>직원 정보</legend>
                     <ul>
                         <li>
-                            <label for="tardersName">거래처명</label>
+                            <label for="tardersName">직원명</label>
                             <input type="text" id="tardersName" required autofocus="autofocus">
                         </li>
                         <li>
                             <label for="tradersAddr">주소</label>
                             <input type="text" id="tradersAddr" required>
-                        </li>
-                        <li>
-                            <label for="markPerson">담당자</label>
-                            <input type="text" id="markPerson" value="정지웅" required>
                         </li>
                         <li>
                             <label for="midTradersTelNum">연락처</label>
@@ -58,16 +54,16 @@
                                 <option>019</option>
                                 <option>070</option>
                             </select>
-                            <input type="tel" id="midTradersTelNum">
-                            <input type="tel" id="lastTradersTelNum">
+                            <input type="tel" id="midTradersTelNum" required>
+                            <input type="tel" id="lastTradersTelNum" required>
                         </li>
                     </ul>
                 </fieldset>
                 <fieldset>
                     <legend>메모</legend>
-                    <textarea placeholder="특이사항 입력"></textarea>
+                    <textarea></textarea>
                 </fieldset>
-                <input type="submit" value="추가">
+                <input type="submit" value="직원 추가">
             </form>
         </section>
 

@@ -34,8 +34,8 @@
                     <legend>날짜 선택</legend>
                     <label id="chooseDate">날짜 선택</label>
                     <input type="date" for="chooseDate" required>
-<!--                     <input type="date" for="chooseDate" required value="<?php date("Y-m-j") ?>"> -->
-
+                    <!-- 현재 날짜를 기본 값으로 줘야 함 -->
+                    <!--<input type="date" for="chooseDate" required value="<?php date("Y-m-j") ?>"> -->
                 </fieldset>
                 <fieldset>
                     <table>
@@ -55,30 +55,31 @@
                         </tfoot>
                         <tbody>
                             <tr>
-                                <td>감피고기</td>
+                                <td><label for="goods_123">감피고기</label></td>
                                 <!-- value 값으로는 현재 재고의 개수가 필요 -->
-                                <td><input type="number" value="200"></td>
+                                <td><input type="number" id="goods_123" value="200" required></td>
                                 <td>아하만두</td>
                             </tr>
                             <tr>
-                                <td>감피김치</td>
-                                <td><input type="number" value="170"></td>
+                                <td><label for="goods_124">감피김치</label></td>
+                                <td><input type="number" id="goods_124" value="170" required></td>
                                 <td>아하만두</td>
                             </tr>
                             <tr>
-                                <td>왕갈비</td>
-                                <td><input type="number" value="40"></td>
+                                <td><label for="goods_125">왕갈비</label></td>
+                                <td><input type="number" id="goods_125" value="40" required></td>
                                 <td>대웅</td>
                             </tr>
                         </tbody>
                     </table>
+                    <button onClick="location.href='addNewGoods.html'">신규 물품 추가</button>
                 </fieldset>
                 <fieldset>
                     <legend>메모</legend>
                     <textarea placeholder="특이사항 입력"></textarea>
                 </fieldset>
                 <!-- 오늘 날짜가 아닌데 수정하려고 하면 수정 하겠냐고 물어봐야 함 -->
-                <input type="submit" value="신규 물품 추가">
+                <input type="submit" value="재고 등록">
             </form>
         </section>
 
