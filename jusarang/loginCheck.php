@@ -1,6 +1,6 @@
 <?php
-    session_set_cookie_params (0,"/",".kanziw.com");
-    ini_set('session.cookie_domain', '.kanziw.com');
+    // session_set_cookie_params (0,"/",".kanziw.com");
+    // ini_set('session.cookie_domain', '.kanziw.com');
     session_start();
     $DB = mysql_connect( 'jusarang.kanziw.com', 'jusarang', 'a' );
     $ret = mysql_select_db( 'jusarang', $DB );
@@ -25,10 +25,10 @@
         header('location: ./mainNav.php');
     }
     else {
-        echo "id : $_POST[id]";
-        echo "<br>";
-        echo "pw : $_POST[passwd]";
-        echo "<br>";
-        echo "authentication fail... ";
+        // echo "id : $_POST[id]";
+        // echo "<br>";
+        // echo "pw : $_POST[passwd]";
+        // echo "<br>";
+        echo "로그인에 실패하였습니다. 다시 시도해주세요";
     }
 ?>

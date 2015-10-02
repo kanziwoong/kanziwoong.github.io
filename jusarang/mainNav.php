@@ -21,7 +21,7 @@ session_start();
     </head>
     <body>
         <header class="header">
-            <h1><?php echo "$name"; ?>님</h1>
+            <h1><?=$name?>님</h1>
             <a href="logout.php">로그아웃</a>
         </header>
 
