@@ -1,3 +1,14 @@
+<?php
+session_start();
+    if(!$_SESSION['id']) {
+        echo "꺼져";
+?>
+
+
+<?php
+    }
+    else {
+?>
 <!DOCTYPE html>
 <html lang="ko">
     <head>
@@ -28,7 +39,7 @@
             </ul>
         </nav>
         <section>
-            <a href="addNewChurch.html">신규 교회 추가</a>
+            <a href="./church/addNewChurch.php">신규 교회 추가</a>
         </section>
         <section>
             <form action="./mainView.html">
@@ -126,3 +137,6 @@
     </body>
 </html>
 
+<?php
+    }
+?>

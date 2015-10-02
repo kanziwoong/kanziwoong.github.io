@@ -1,3 +1,16 @@
+<?php
+session_start();
+    if(!isset($_SESSION['idx'])) {
+        echo "꺼져";
+?>
+
+
+<?php
+    }
+    else {
+        $name = $_SESSION['name'];
+        $is_admin = $_SESSION['is_admin'];
+?>
 <!DOCTYPE html>
 <html lang="ko">
     <head>
@@ -8,7 +21,8 @@
     </head>
     <body>
         <header class="header">
-            <h1>000 님</h1>
+            <h1><?php echo "$name"; ?>님</h1>
+            <a href="logout.php">로그아웃</a>
         </header>
 
         <nav class="nav">
@@ -41,6 +55,9 @@
                 </li>
             </ul>
         </section>
+<?php
+        if ($is_admin == 1) {
+?>
 
         <section>
             관리자 메뉴
@@ -56,6 +73,9 @@
                 </li>
             </ul>
         </section>
+<?php
+        }
+?>
 
         <footer>
             &copy; yunsub2 &amp; kanziw
@@ -64,3 +84,6 @@
     </body>
 </html>
 
+<?php
+    }
+?>

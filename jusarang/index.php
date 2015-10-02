@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['idx'])) {
+?>
 <!DOCTYPE html>
 <html lang="ko">
     <head>
@@ -20,7 +24,7 @@
         </section>
 
         <section>
-            <form action="./mainNav.html">
+            <form method="POST" action="./loginCheck.php">
                 <fieldset>
                     <legend>Login</legend>
                     <ul>
@@ -28,7 +32,7 @@
                             <input type="text" placeholder="ID" name="id" required autofocus="autofocus">
                         </li>
                         <li>
-                            <input type="password" placeholder="Password" name="pw" required>
+                            <input type="password" placeholder="Password" name="passwd" required>
                         </li>
                     </ul>
                     <input type="submit" value="로그인">
@@ -42,3 +46,11 @@
 
     </body>
 </html>
+
+
+<?php
+    }
+    else {
+        header('location: ./mainNav.php');
+    }
+?>
