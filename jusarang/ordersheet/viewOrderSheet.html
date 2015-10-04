@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
         <title>주사랑 선교회 ERP System</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="../main.css">
     </head>
     <body>
         <header class="header">
@@ -34,19 +34,19 @@
                     <legend>배송 정보</legend>
                     <ul>
                         <li>
-                            <label for="churchName">교회명</label>
-                            <input type="text" required readonly value="계산장로교회">
+                            <label for="church_name">교회명</label>
+                            <input type="text" id="church_name" required readonly value="계산장로교회">
                         </li>
                         <li>
-                            <label for="churchAddr">주소</label>
-                            <input type="text" id="churchAddr" required readonly value="인천 계양구 부평초등길">
+                            <label for="church_address">주소</label>
+                            <input type="text" id="church_address" required readonly value="인천 계양구 부평초등길">
                         </li>
                         <li>
-                            <label for="getPerson">수취인</label>
-                            <input type="text" required readonly value="김에스더 집사">
+                            <label for="customer_name">수취인</label>
+                            <input type="text" id="customer_name" required readonly value="김에스더 집사">
                         </li>
                         <li>
-                            <label for="telNum">연락처</label>
+                            <label for="customer_telNum">연락처</label>
                             <a href="tel:01012345678">010-1234-5678</a>
                         </li>
                         <li>
@@ -124,9 +124,9 @@
                         </li>
                         <li>
                             직배
-                            <input type="radio" name="direct" id="directYes" checked disabled>
+                            <input type="radio" name="isDirect" id="directYes" value="yes" checked disabled>
                             <label for="directYes">YES</label>
-                            <input type="radio" name="direct" id="directNo" disabled>
+                            <input type="radio" name="isDirect" id="directNo" value="no" disabled>
                             <label for="directNo">NO</label>
                         </li>
                     </ul>

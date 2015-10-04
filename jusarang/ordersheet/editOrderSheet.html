@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
         <title>주사랑 선교회 ERP System</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="../main.css">
     </head>
     <body>
         <header class="header">
@@ -34,21 +34,21 @@
                     <legend>배송 정보</legend>
                     <ul>
                         <li>
-                            <label for="churchName">교회명</label>
-                            <button id="churchName" formaction="#">검색</button>
+                            <label for="church_name">교회명</label>
+                            <button id="church_name" formaction="#">검색</button>
                             <input type="text" required readonly value="계산장로교회">
                         </li>
                         <li>
-                            <label for="churchAddr">주소</label>
-                            <input type="text" id="churchAddr" required readonly value="인천 계양구 부평초등길">
+                            <label for="church_address">주소</label>
+                            <input type="text" id="church_address" required readonly value="인천 계양구 부평초등길">
                         </li>
                         <li>
-                            <label for="getPerson">수취인</label>
-                            <input type="text" required readonly value="김에스더 집사">
+                            <label for="customer_name">수취인</label>
+                            <input type="text" id="customer_name" required readonly value="김에스더 집사">
                         </li>
                         <li>
-                            <label for="midCTelNum">연락처</label>
-                            <select id="firstCTelNum">
+                            <label for="customer_middleTelNum">연락처</label>
+                            <select id="customer_firstTelNum">
                                 <option>02</option>
                                 <option>032</option>
                                 <option>033</option>
@@ -59,8 +59,8 @@
                                 <option>019</option>
                                 <option>070</option>
                             </select>
-                            <input type="tel" id="midCTelNum" readonly required value="1234">
-                            <input type="tel" id="lastCTelNum" readonly required value="5678">
+                            <input type="tel" id="customer_middleTelNum" readonly required value="1234">
+                            <input type="tel" id="customer_lastTelNum" readonly required value="5678">
                         </li>
                         <li>
                             <label for="outDate">출고일</label>
@@ -142,9 +142,9 @@
                         </li>
                         <li>
                             직배
-                            <input type="radio" name="direct" id="directYes" checked>
+                            <input type="radio" name="isDirect" id="directYes" value="yes" checked>
                             <label for="directYes">YES</label>
-                            <input type="radio" name="direct" id="directNo">
+                            <input type="radio" name="isDirect" id="directNo" value="no">
                             <label for="directNo">NO</label>
                         </li>
                     </ul>

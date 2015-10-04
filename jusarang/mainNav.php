@@ -17,12 +17,12 @@ session_start();
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
         <title>주사랑 선교회 ERP System</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="./main.css">
     </head>
     <body>
         <header class="header">
             <h1><?=$name?>님</h1>
-            <a href="logout.php">로그아웃</a>
+            <a href="./logout.php">로그아웃</a>
         </header>
 
         <nav class="nav">
@@ -45,13 +45,13 @@ session_start();
         <section>
             <ul>
                 <li>
-                    <a href="mainView.html">교회 조회</a>
+                    <a href="./mainView.html">교회 조회</a>
                 </li>
                 <li>
-                    <a href="viewOrderSheetList.html">주문서 조회</a>
+                    <a href="./ordersheet/viewOrderSheetList.html">주문서 조회</a>
                 </li>
                 <li>
-                    <a href="writeOrderSheet.html">주문서 작성</a>
+                    <a href="./ordersheet/writeOrderSheet.html">주문서 작성</a>
                 </li>
             </ul>
         </section>
@@ -63,13 +63,13 @@ session_start();
             관리자 메뉴
             <ul>
                 <li>
-                    <a href="manageGoods.html">물품 관리</a>
+                    <a href="./goods/manageGoods.html">물품 관리</a>
                 </li>
                 <li>
-                    <a href="viewStaffList.html">직원 관리</a>
+                    <a href="./staff/viewStaffList.html">직원 관리</a>
                 </li>
                 <li>
-                    <a href="viewTradersList.html">거래처 관리</a>
+                    <a href="./traders/viewTradersList.html">거래처 관리</a>
                 </li>
             </ul>
         </section>

@@ -4,7 +4,6 @@ session_start();
         echo "꺼져";
 ?>
 
-
 <?php
     }
     else {
@@ -17,7 +16,7 @@ session_start();
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
         <title>주사랑 선교회 ERP System</title>
-        <link rel="stylesheet" href="/main.css">
+        <link rel="stylesheet" href="../main.css">
     </head>
     <body>
         <!-- 주소 api script -->
@@ -117,32 +116,31 @@ session_start();
                         <li>
                             <label>주소</label>
                             <input type="button" onclick="execDaumPostcode('church_address', 'church_address2','church_postcode', 'church_sido', 'church_sigungu')" value="검색">
-                            <input type="text" id="church_postcode" name="church" placeholder="우편번호"><br>
+                            <input type="text" id="church_postcode" name="church_postcode" placeholder="우편번호"><br>
                             <input type="text" id="church_address" name="church_address" placeholder="주소">
                             <input type="text" id="church_address2" name="church_address2" placeholder="상세주소">
                             <input type="hidden" id="church_sido" name="church_sido">
                             <input type="hidden" id="church_sigungu" name="church_sigungu">
-
                         </li>
                         <li>
-                            <label for="midCTelNum">연락처</label>
-                            <select id="firstCTelNum">
-                                <option>02</option>
-                                <option>032</option>
-                                <option>033</option>
-                                <option>010</option>
-                                <option>011</option>
-                                <option>017</option>
-                                <option>018</option>
-                                <option>019</option>
-                                <option>070</option>
+                            <label for="church_midTelNum">연락처</label>
+                            <select id="church_firstTelNum" name="church_firstTelNum">
+                                <option value="02">02</option>
+                                <option value="032">032</option>
+                                <option value="033">033</option>
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="017">017</option>
+                                <option value="018">018</option>
+                                <option value="019">019</option>
+                                <option value="070">070</option>
                             </select>
-                            <input type="tel" id="midCTelNum">
-                            <input type="tel" id="lastCTelNum">
+                            <input type="tel" id="church_midTelNum" name="church_midTelNum">
+                            <input type="tel" id="church_lastTelNum" name="church_lastTelNum">
                         </li>
                         <li>
-                            <label for="markPerson">배정직원</label>
-                            <input type="text" id="markPerson" value="<?=$name?>" required readonly>
+                            <label for="markStaff">배정직원</label>
+                            <input type="text" id="markStaff" name="markStaff" value="<?=$name?>" required readonly>
                         </li>
                     </ul>
                 </fieldset>
@@ -150,42 +148,42 @@ session_start();
                     <legend>담당자1</legend>
                     <ul>
                         <li>
-                            <label for="name1">이름</label>
-                            <input type="text" id="name1" required>
-                            <select>
-                                <option>권사님</option>
-                                <option>집사님</option>
-                                <option>장로님</option>
-                                <option>목사님</option>
-                                <option>사모님</option>
-                                <option>성도</option>
-                                <option>간사</option>
+                            <label for="customer1_name">이름</label>
+                            <input type="text" id="customer1_name" name="customer1_name" required>
+                            <select name="customer1_appellation">
+                                <option value="권사님">권사님</option>
+                                <option value="집사님">집사님</option>
+                                <option value="장로님">장로님</option>
+                                <option value="목사님">목사님</option>
+                                <option value="사모님">사모님</option>
+                                <option value="성도">성도</option>
+                                <option value="간사">간사</option>
                             </select>
                         </li>
                         <li>
-                            <label for="position1">직위</label>
-                            <input type="text" id="position1">
-                            <select>
-                                <option>재직</option>
-                                <option>은퇴</option>
-                                <option>기타</option>
+                            <label for="customer1_position">직위</label>
+                            <input type="text" id="customer1_position" name="customer1_position">
+                            <select name="isRetire">
+                                <option value="재직">재직</option>
+                                <option value="은퇴">은퇴</option>
+                                <option value="기타">기타</option>
                             </select>
                         </li>
                         <li>
-                            <label for="midP1TelNum">연락처</label>
-                            <select id="customer1_firstTelNum">
-                                <option>02</option>
-                                <option>032</option>
-                                <option>033</option>
-                                <option selected>010</option>
-                                <option>011</option>
-                                <option>017</option>
-                                <option>018</option>
-                                <option>019</option>
-                                <option>070</option>
+                            <label for="customer1_midTelNum">연락처</label>
+                            <select id="customer1_firstTelNum" name="customer1_firstTelNum">
+                                <option value="02">02</option>
+                                <option value="032">032</option>
+                                <option value="033">033</option>
+                                <option value="010" selected>010</option>
+                                <option value="011">011</option>
+                                <option value="017">017</option>
+                                <option value="018">018</option>
+                                <option value="019">019</option>
+                                <option value="070">070</option>
                             </select>
-                            <input type="tel" id="customer1_midTelNum" required>
-                            <input type="tel" id="customer1_lastTelNum" required>
+                            <input type="tel" id="customer1_midTelNum" name="customer1_midTelNum" required>
+                            <input type="tel" id="customer1_lastTelNum" name="customer1_lastTelNum" required>
                         </li>
                         <li>
                             <label>주소</label>
@@ -193,20 +191,18 @@ session_start();
                             <input type="text" id="customer1_postcode" name="customer1_postcode" placeholder="우편번호"><br>
                             <input type="text" id="customer1_address" name="customer1_address" placeholder="주소">
                             <input type="text" id="customer1_address2" name="customer1_address2" placeholder="상세주소">
-                            <input type="hidden" id="customer1_sido" name="customer1_sido">
-                            <input type="hidden" id="customer1_sigungu" name="customer1_sigungu">
                             <input type="checkbox" name="addressToo" onclick="FillAddress(this.form)"> 교회주소와 같음
                         </li>
                         <li>
-                            <input type="radio" name="customer1" id="customer1" checked>
-                            <label for="customer1">주 담당자</label>
+                            <input type="radio" name="mainCustomer" id="customer1_main" value="customer1" checked>
+                            <label for="customer1_main">주 담당자</label>
                         </li>
                     </ul>
                 </fieldset>
                 <input type="button" value="+">
                 <fieldset>
                     <legend>메모</legend>
-                    <textarea placeholder="특이사항 입력"></textarea>
+                    <textarea placeholder="특이사항 입력" name="memo"></textarea>
                 </fieldset>
                 <input type="submit" value="추가">
             </form>
