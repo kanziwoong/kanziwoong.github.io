@@ -29,7 +29,7 @@
         </nav>
 
         <section>
-            <a href="./writeOrderSheet.html">새 주문서 작성</a>
+            <a href="./writeOrderSheet.php">새 주문서 작성</a>
         </section>
         <section>
             <h1>주문서 목록</h1>

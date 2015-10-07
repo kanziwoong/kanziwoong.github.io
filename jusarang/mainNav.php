@@ -48,10 +48,10 @@ session_start();
                     <a href="./mainView.html">교회 조회</a>
                 </li>
                 <li>
-                    <a href="./ordersheet/viewOrderSheetList.html">주문서 조회</a>
+                    <a href="./ordersheet/viewOrderSheetList.php">주문서 조회</a>
                 </li>
                 <li>
-                    <a href="./ordersheet/writeOrderSheet.html">주문서 작성</a>
+                    <a href="./ordersheet/writeOrderSheet.php">주문서 작성</a>
                 </li>
             </ul>
         </section>
